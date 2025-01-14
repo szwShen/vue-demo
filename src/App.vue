@@ -1,79 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
-import Father from "./views/Father.vue";
-import Father2 from "./views/Father2.vue";
-import Child2 from "./views/Child2.vue";
-import Child3 from "./views/Child3.vue";
-import Father4 from "./views/Father4.vue";
-import Father7 from "./views/Father7.vue";
+import { Plus } from "@element-plus/icons-vue";
 </script>
 
 <template>
- <!-- <Father4></Father4> -->
-<Father7></Father7>
+  <svg-icon name="phone" color="red"></svg-icon>
+  <el-button type="primary" :icon="Plus">Primary</el-button>
+  <div class="header">aaaaaaaaaaaaaa</div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+<style scoped lang="scss">
+ 
+.header {
+  color: $color;
 }
 </style>
